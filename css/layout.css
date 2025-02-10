@@ -29,14 +29,14 @@
 .bubble-container {
   width: 100%;
   flex: 1;
-  padding: 4px;
+  padding: 1px;
   background: #f9f9f9;
   border-radius: 15px;
   overflow-y: auto;
   max-height: calc(100vh - 220px);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 2px;
+  gap: 1px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -79,8 +79,8 @@
   .bubble-container {
     max-height: calc(100vh - 200px);
     grid-template-columns: repeat(6, 1fr);
-    gap: 1px;
-    padding: 2px;
+    gap: 0px;
+    padding: 1px;
   }
 
   .top-bar {
