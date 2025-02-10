@@ -31,11 +31,11 @@
   padding: 20px;
   background: #f9f9f9;
   border-radius: 15px;
-  overflow-y: auto;
+  overflow: hidden;
   max-height: 60vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 10px;
 }
 
 .pagination {
