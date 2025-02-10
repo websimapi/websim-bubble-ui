@@ -5,6 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 80px; /* Add padding for pagination */
 }
 
 .top-bar {
@@ -31,11 +32,12 @@
   padding: 8px;
   background: #f9f9f9;
   border-radius: 15px;
-  overflow: hidden;
-  max-height: 60vh;
+  overflow-y: auto;
+  max-height: calc(100vh - 220px); /* Adjusted for better mobile fit */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(6, 1fr); /* Fixed 6 columns */
   gap: 4px;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .pagination {
@@ -50,4 +52,24 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    padding-bottom: 70px;
+  }
+
+  .bubble-container {
+    max-height: calc(100vh - 200px);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    padding: 4px;
+  }
+
+  .top-bar {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 }
