@@ -32,20 +32,11 @@
   padding: 4px;
   font-size: 0.9rem;
   width: 100%;
-  position: relative;
-}
-
-.bubble::before {
-  content: '';
-  display: block;
-  padding-top: 100%;
-}
-
-.bubble span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  min-width: 0; /* Prevent grid blowout */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bubble:hover {
@@ -104,6 +95,9 @@
   justify-content: center;
   color: #999;
   font-size: 0.8rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .details-content {
