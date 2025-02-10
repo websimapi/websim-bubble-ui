@@ -5,7 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-bottom: 80px; /* Add padding for pagination */
+  padding-bottom: 80px;
 }
 
 .top-bar {
@@ -33,11 +33,11 @@
   background: #f9f9f9;
   border-radius: 15px;
   overflow-y: auto;
-  max-height: calc(100vh - 220px); /* Adjusted for better mobile fit */
+  max-height: calc(100vh - 220px);
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Fixed 6 columns */
+  grid-template-columns: repeat(6, 1fr);
   gap: 4px;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
 .pagination {
@@ -60,14 +60,14 @@
   bottom: 20px;
   left: 20px;
   background: white;
-  padding: 15px;
+  padding: 12px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 280px;
-  min-height: 120px;
+  width: 200px;
+  min-height: 90px;
   z-index: 10;
   display: flex;
-  gap: 12px;
+  gap: 8px;
 }
 
 @media (max-width: 600px) {
@@ -89,9 +89,9 @@
   }
 
   .details-panel {
-    width: calc(100% - 40px);
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 90px; /* Position above pagination */
+    width: 160px;
+    left: 20px;
+    transform: none;
+    bottom: 90px;
   }
 }
